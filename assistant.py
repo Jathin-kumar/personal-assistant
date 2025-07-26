@@ -48,13 +48,6 @@ def run_giri():
         time = datetime.datetime.now().strftime('%I:%M %p')
         talk(f"It’s {time} ⏰")
 
-    elif "who is uday codes" in command or "who is uday_codes" in command:
-        info = (
-            "Uday, known as uday_codes on Instagram, is a coding content creator. "
-            "He teaches Python projects in Telugu and runs udaycodes.in 💻"
-        )
-        talk(info)
-
     elif "who is" in command:
         person = command.replace("who is", "").strip()
         try:
